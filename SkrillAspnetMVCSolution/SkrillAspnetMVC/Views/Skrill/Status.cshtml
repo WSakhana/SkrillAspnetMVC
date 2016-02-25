@@ -1,0 +1,106 @@
+﻿@model SkrillAspnetMVC.Models.SkrillStatus
+
+@{
+    ViewBag.Title = "Status";
+}
+
+<h2>Status</h2>
+
+<div>
+    <h4>SkrillStatus</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.pay_to_email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pay_to_email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pay_from_email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pay_from_email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.merchant_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.merchant_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customer_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customer_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.transaction_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.transaction_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mb_amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mb_amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mb_currency)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mb_currency)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.failed_reason_code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.failed_reason_code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.md5sig)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.md5sig)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sha2sig)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sha2sig)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
